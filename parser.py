@@ -43,3 +43,4 @@ def parse_information(query):
 
 # Викликаємо функцію
 parse_information(query)
+# ще одна робота яка не знадобилася

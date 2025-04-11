@@ -65,5 +65,3 @@ Work in progress — more structure, clarity, and functionality coming soon!
 This README will be updated as the journey continues.
 
 ---
-
-Якщо хочеш — можемо зробити Markdown-таблицю для Roadmap зі статусами типу ✅ / ⏳ / 🔜 або навіть дата-план. Хочеш — я згенерую це?

@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Government passes new law",
+    "label": "politics"
+  },
+  {
+    "text": "New smartphone released",
+    "label": "not_politics"
+  },
+  {
+    "text": "President visits Ukraine",
+    "label": "politics"
+  },
+  {
+    "text": "Scientists discover new planet",
+    "label": "not_politics"
+  }
+]

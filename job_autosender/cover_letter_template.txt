@@ -1,0 +1,20 @@
+
+Hi [Hiring Manager],
+
+My name is Mykhailo Tverdokhlibov. 
+I'm an aspiring NLP/AI Engineer with a background in software development and a deep interest in real-world applications of language technologies.
+
+I’ve already built personal projects in NLP, such as a Ukrainian news text converter for preprocessing and analysis. 
+My focus is on building AI-based systems — from text pipelines to chatbot/LLM-based automation tools. 
+I’m currently learning PyTorch, HuggingFace, and vector database integration to expand my impact in this field.
+
+My long-term goal is to work on impactful AI technologies and eventually contribute to visionary projects like The Venus Project. 
+I’m excited to grow with a team working on challenging, meaningful AI problems.
+
+Please find my resume attached. I’d be happy to talk further.
+
+Best regards,  
+Mykhailo Tverdokhlibov  
+📧 tverdokhlibov32@gmail.com  
+📞 +38 097 104 71 53  
+💬 Telegram: https://t.me/VIVERIVINIVERSUMVIVUSVICI

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Classifier</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
+        .news-item { border-bottom: 1px solid #ccc; padding: 0.5rem 0; }
+        input, button { padding: 0.5rem; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>📰 News Classifier</h1>
+
+    <h2>Existing News</h2>
+    <div id="news-list">Loading...</div>
+
+    <h2>Classify New Title</h2>
+    <input id="title-input" type="text" placeholder="Enter news title" size="50">
+    <button onclick="predict()">Predict Category</button>
+    <p id="prediction-result"></p>
+
+    <script>
+        async function loadNews() {
+            const res = await fetch('/news');
+            const news = await res.json();
+            const container = document.getElementById('news-list');
+            container.innerHTML = news.map(item =>
+                `<div class="news-item"><strong>${item.category}</strong>: ${item.title}</div>`
+            ).join('');
+        }
+
+        async function predict() {
+            const title = document.getElementById('title-input').value;
+            const res = await fetch('/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ title })
+            });
+            const result = await res.json();
+            document.getElementById('prediction-result').textContent =
+                `Predicted category: ${result.predicted_category}`;
+        }
+
+        loadNews();
+    </script>
+</body>
+</html>
